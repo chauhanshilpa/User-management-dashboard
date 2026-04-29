@@ -1,0 +1,14 @@
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.pageBox {
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black
+}
