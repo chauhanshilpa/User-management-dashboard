@@ -1,16 +1,16 @@
-
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import UsersList from './page/UsersList'
+import UserDetails from './page/UserDetails'
+import './App.css'
 
 function App() {
-
   return (
-    <>
-      <header>User Management Dashboard</header>
-      <main>
-        <UsersList />
-      </main>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<UsersList />} />
+        <Route path="/users/:id" element={<UserDetails />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
